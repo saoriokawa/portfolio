@@ -320,7 +320,7 @@ nav>ul>li>a:active {
   }
 }
 
-#Seagull {
+.Seagull {
   animation: 15s color-change-seagull infinite alternate linear;
 }
 
@@ -334,7 +334,7 @@ nav>ul>li>a:active {
   }
 }
 
-#Star {
+.Star {
   animation: 15s color-change-night infinite alternate linear;
 }
 
