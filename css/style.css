@@ -347,6 +347,11 @@ nav>ul>li>a:active {
   color: #00796B;
 }
 
+.image-link img:hover {
+  transition: 0.2s;
+  opacity: 0.8;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
