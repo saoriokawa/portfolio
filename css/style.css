@@ -277,14 +277,22 @@ nav>ul>li>a:active {
   text-align: left;
 }
 
-.social-media>ul {
+.social-media ul {
   list-style-type: none;
-  padding: 0;
-  text-align: right;
+}
+.social-media a {
+  text-decoration: underline;
+  color: #212121;
 }
 
-.social-media>ul>li {
-  display: inline-block;
+.social-media a:hover,
+.social-media a:focus {
+  color: #9E9E9E;
+}
+
+.social-media a:active {
+  color: #212121;
+  text-decoration: none; /* No underlining */
 }
 
 /* ========== Animation ========== */
