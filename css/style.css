@@ -352,6 +352,17 @@ nav>ul>li>a:active {
   opacity: 0.8;
 }
 
+/* ========== FLIPPY page ========== */
+.flippy-process {
+  color: #F57C00;
+}
+
+#flippy-persona {
+  display: inline-block;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */

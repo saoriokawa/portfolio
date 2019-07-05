@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i&display=swap" rel="stylesheet">
+  <link href="css/lightbox.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/ffb691a1dc.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -74,16 +75,20 @@
                 <br>
               </div>
               <div class="col-md-5">
-                <picture>
-                  <source srcset="img/flippy/1_Brainscape_1.png" media="(max-width:767px)">
-                  <img src="img/flippy/1_Brainscape_1.png" alt="Brainscape">
-                </picture>
+                <a href="img/flippy/1_Brainscape_1.png" data-lightbox="Competitive Analysis">
+                  <picture>
+                    <source srcset="img/flippy/1_Brainscape_1.png" media="(max-width:767px)">
+                    <img src="img/flippy/1_Brainscape_1.png" alt="Brainscape">
+                  </picture>
+                </a>
               </div>
               <div class="col-md-5">
-                <picture>
-                  <source srcset="img/flippy/1_Brainscape_2.png" media="(max-width:767px)">
-                  <img src="img/flippy/1_Brainscape_2.png" alt="Brainscape">
-                </picture>
+                <a href="img/flippy/1_Brainscape_2.png" data-lightbox="Competitive Analysis">
+                  <picture>
+                    <source srcset="img/flippy/1_Brainscape_2.png" media="(max-width:767px)">
+                    <img src="img/flippy/1_Brainscape_2.png" alt="Brainscape">
+                  </picture>
+                </a>
               </div>
               <div class="col-md-1">
                 <br>
@@ -97,16 +102,20 @@
                 <br>
               </div>
               <div class="col-md-5">
-                <picture>
-                  <source srcset="img/flippy/1_Quizlet_1.png" media="(max-width:767px)">
-                  <img src="img/flippy/1_Quizlet_1.png" alt="Quizlet">
-                </picture>
+                <a href="img/flippy/1_Quizlet_1.png" data-lightbox="Competitive Analysis">
+                  <picture>
+                    <source srcset="img/flippy/1_Quizlet_1.png" media="(max-width:767px)">
+                    <img src="img/flippy/1_Quizlet_1.png" alt="Quizlet">
+                  </picture>
+                </a>
               </div>
               <div class="col-md-5">
-                <picture>
-                  <source srcset="img/flippy/1_Quizlet_2.png" media="(max-width:767px)">
-                  <img src="img/flippy/1_Quizlet_2.png" alt="Quizlet">
-                </picture>
+                <a href="img/flippy/1_Quizlet_2.png" data-lightbox="Competitive Analysis">
+                  <picture>
+                    <source srcset="img/flippy/1_Quizlet_2.png" media="(max-width:767px)">
+                    <img src="img/flippy/1_Quizlet_2.png" alt="Quizlet">
+                  </picture>
+                </a>
               </div>
               <div class="col-md-1">
                 <br>
@@ -120,16 +129,20 @@
                 <br>
               </div>
               <div class="col-md-5">
-                <picture>
-                  <source srcset="img/flippy/1_Tinycards_1.png" media="(max-width:767px)">
-                  <img src="img/flippy/1_Tinycards_1.png" alt="Tinycards">
-                </picture>
+                <a href="img/flippy/1_Tinycards_1.png" data-lightbox="Competitive Analysis">
+                  <picture>
+                    <source srcset="img/flippy/1_Tinycards_1.png" media="(max-width:767px)">
+                    <img src="img/flippy/1_Tinycards_1.png" alt="Tinycards">
+                  </picture>
+                </a>
               </div>
               <div class="col-md-5">
-                <picture>
-                  <source srcset="img/flippy/1_Tinycards_2.png" media="(max-width:767px)">
-                  <img src="img/flippy/1_Tinycards_2.png" alt="Tinycards">
-                </picture>
+                <a href="img/flippy/1_Tinycards_2.png" data-lightbox="Competitive Analysis">
+                  <picture>
+                    <source srcset="img/flippy/1_Tinycards_2.png" media="(max-width:767px)">
+                    <img src="img/flippy/1_Tinycards_2.png" alt="Tinycards">
+                  </picture>
+                </a>
               </div>
               <div class="col-md-1">
                 <br>
@@ -151,8 +164,8 @@
         <div>
           <h4 class="flippy-process">3. Personas</h4>
           <p>Based on the results of the interviews, I created a user persona to make an image of target users clearer.</p>
-          <div class="width-80">
-            <picture>
+          <div style="display: flex;">
+            <picture id="flippy-persona">
               <source srcset="img/flippy/3_Persona.png" media="(max-width:767px)">
               <img src="img/flippy/3_Persona.png" alt="Persona">
             </picture>
@@ -169,17 +182,27 @@
         </ul>
         <p>With these challenges in mind, user flows were established as a summary of tasks that users would complete.</p>
         <div class="row">
-          <div class="col-md-6">
-            <picture>
-              <source srcset="img/flippy/4_UserFlow1.png" media="(max-width:767px)">
-              <img src="img/flippy/4_UserFlow1.png" alt="User Flow 1">
-            </picture>
+          <div class="col-md-1">
+            <br>
           </div>
-          <div class="col-md-4">
-            <picture>
-              <source srcset="img/flippy/4_UserFlow2.png" media="(max-width:767px)">
-              <img src="img/flippy/4_UserFlow2.png" alt="User Flow 2">
-            </picture>
+          <div class="col-md-6">
+            <a href="img/flippy/4_UserFlow1.png" data-lightbox="User Flow">
+              <picture>
+                <source srcset="img/flippy/4_UserFlow1.png" media="(max-width:767px)">
+                <img src="img/flippy/4_UserFlow1.png" alt="User Flow 1">
+              </picture>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="img/flippy/4_UserFlow2.png" data-lightbox="User Flow">
+              <picture>
+                <source srcset="img/flippy/4_UserFlow2.png" media="(max-width:767px)">
+                <img src="img/flippy/4_UserFlow2.png" alt="User Flow 2">
+              </picture>
+            </a>
+          </div>
+          <div class="col-md-1">
+            <br>
           </div>
         </div>
       </div>
@@ -199,24 +222,28 @@
           were made utilising Sketch.</p>
         <div class="row">
           <div class="col-md-6">
-            <picture>
-              <source srcset="img/flippy/Mid-fidelityWireframes@1x.jpg" media="(max-width:767px)">
-              <img src="img/flippy/Mid-fidelityWireframes@2x.jpg" alt="Mid-Fidelity Wireframes">
-            </picture>
+            <a href="img/flippy/Mid-fidelityWireframes@2x.jpg" data-lightbox="Wireframes">
+              <picture>
+                <source srcset="img/flippy/Mid-fidelityWireframes@1x.jpg" media="(max-width:767px)">
+                <img src="img/flippy/Mid-fidelityWireframes@2x.jpg" alt="Mid-Fidelity Wireframes">
+              </picture>
+            </a>
             <h5>Samples: Mid-fidelity wireframes</h5>
           </div>
           <div class="col-md-6">
-            <picture>
-              <source srcset="img/flippy/High-fidelityWireframes-1@1x.jpg" media="(max-width:767px)">
-              <img src="img/flippy/High-fidelityWireframes-1@2x.jpg" alt="High-Fidelity Wireframes ver.1">
-            </picture>
+            <a href="img/flippy/High-fidelityWireframes-1@2x.jpg" data-lightbox="Wireframes">
+              <picture>
+                <source srcset="img/flippy/High-fidelityWireframes-1@1x.jpg" media="(max-width:767px)">
+                <img src="img/flippy/High-fidelityWireframes-1@2x.jpg" alt="High-Fidelity Wireframes ver.1">
+              </picture>
+            </a>
             <h5>Samples: High-fidelity wireframes (ver. 1)</h5>
           </div>
         </div>
       </div>
       <div>
         <h4 class="flippy-process">7. Usability Tests</h4>
-        <p>I am going to conduct usability tests. As soon as I get the results, I will update the page!</p>
+        <p>I am conducting usability tests now. As soon as I get the results, I will update the page!</p>
       </div>
       <div class="row" style="display: flex;">
         <a href="#top" class="button">Back to top</a>
@@ -252,6 +279,7 @@
   </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
+  <script src="js/lightbox.js"></script>
 </body>
 
 </html>
