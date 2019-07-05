@@ -190,6 +190,7 @@ a:active {
 #profile-picture {
   display: inline-block;
   width: 60%;
+  max-width: 350px;
   margin: 0 auto;
 }
 
