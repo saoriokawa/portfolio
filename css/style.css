@@ -57,7 +57,6 @@ h3 {
 
 h4 {
   font-size: 1.35em;
-
 }
 
 h5 {
@@ -73,18 +72,21 @@ img {
 /* ========== Link ========== */
 a {
   color: #BF491F;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
 
 a:hover,
 a:focus {
   color: #FFA282;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
 
 a:active {
   color: #BF491F;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
 
 /* ========== Buttons ========== */
@@ -104,7 +106,8 @@ a:active {
 }
 
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   background-color: #FFA282;
   color: #212121;
   transition: 0.2s;
@@ -190,7 +193,7 @@ a:active {
   margin: 0 auto;
 }
 
-.skills > ul {
+.skills>ul {
   list-style-type: none;
   padding: 0;
 }
@@ -202,24 +205,24 @@ a:active {
   min-width: 100px;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   color: #212121;
 }
 
-nav > ul > li > a:hover, :focus {
+nav>ul>li>a:hover, :focus {
   color: #212121;
   text-decoration: none;
 }
 
-nav > ul > li > a:active {
+nav>ul>li>a:active {
   border-bottom: 2px solid #BF491F;
   transition: 0.2s opacity;
 }
@@ -239,21 +242,20 @@ nav > ul > li > a:active {
   font-size: 30px;
 }
 
-.navtoggle.responsive li  {
-  display: block;
-}
+@media only screen and (max-width: 640px) {
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
 
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
-.navtoggle.responsive li  {
-  display: block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
-}
+  .navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 127, 80, 0.5);
+  }
 
-.navtoggle.responsive li:last-child  {
-  padding: 0 0 10px;
+  .navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+  }
 }
 
 .current-page {
@@ -265,7 +267,7 @@ nav > ul > li > a:active {
 }
 
 /* ========== Footer ========== */
-#contact h2{
+#contact h2 {
   text-align: left;
   letter-spacing: 2px;
 }
@@ -274,21 +276,25 @@ nav > ul > li > a:active {
   text-align: left;
 }
 
-.social-media > ul {
+.social-media>ul {
   list-style-type: none;
   padding: 0;
   text-align: right;
 }
 
-.social-media > ul > li {
+.social-media>ul>li {
   display: inline-block;
 }
 
 /* ========== Animation ========== */
-
 @keyframes color-change-sky {
-  from {fill: #CEEDFB;}
-  to {fill: #372CC3;}
+  from {
+    fill: #CEEDFB;
+  }
+
+  to {
+    fill: #372CC3;
+  }
 }
 
 #Sky {
@@ -296,30 +302,41 @@ nav > ul > li > a:active {
 }
 
 @keyframes color-change-seagull {
-  from {opacity: 1}
-  to {opacity: 0}
+  from {
+    opacity: 1
+  }
+
+  to {
+    opacity: 0
+  }
 }
 
 #Seagull {
   animation: 15s color-change-seagull infinite alternate linear;
-  }
+}
 
 @keyframes color-change-night {
-  from {opacity: 0}
-  to {opacity: 1}
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 #Star {
-    animation: 15s color-change-night infinite alternate linear;
-  }
+  animation: 15s color-change-night infinite alternate linear;
+}
+
 .Moon {
-      animation: 15s color-change-night infinite alternate linear;
-  }
+  animation: 15s color-change-night infinite alternate linear;
+}
 
 /* ========== INK TANK page ========== */
-  .inktank-process {
-    color: #00796B;
-  }
+.inktank-process {
+  color: #00796B;
+}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -330,9 +347,9 @@ Medium devices (640px and larger)
   }
 
   header {
-  text-align: unset;
-  padding: 20px 0 13px;
-  font-size: 16px;
+    text-align: unset;
+    padding: 20px 0 13px;
+    font-size: 16px;
   }
 
   nav {
@@ -340,21 +357,21 @@ Medium devices (640px and larger)
     float: right;
   }
 
-  nav > ul {
+  nav>ul {
     margin: 1em 0;
   }
 
-  nav > ul > li {
+  nav>ul>li {
     display: inline-block;
   }
 
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+    display: inline-block;
+  }
 
-.navtoggle li:last-child {
-  display: none;
-}
+  .navtoggle li:last-child {
+    display: none;
+  }
 
   main {
     padding-top: 99px;
@@ -372,28 +389,63 @@ Medium devices (640px and larger)
     display: block;
   }
 
-  .col-md-1 {width: 8.33%;}
-  .col-md-2 {width: 16.66%;}
-  .col-md-3 {width: 25%;}
-  .col-md-4 {width: 33.33%;}
-  .col-md-5 {width: 41.66%;}
-  .col-md-6 {width: 50%;}
-  .col-md-7 {width: 58.33%;}
-  .col-md-8 {width: 66.66%;}
-  .col-md-9 {width: 75%;}
-  .col-md-10 {width: 83.33%;}
-  .col-md-11 {width: 91.66%;}
-  .col-md-12 {width: 100%;}
+  .col-md-1 {
+    width: 8.33%;
+  }
+
+  .col-md-2 {
+    width: 16.66%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .col-md-5 {
+    width: 41.66%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .col-md-8 {
+    width: 66.66%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  .col-md-10 {
+    width: 83.33%;
+  }
+
+  .col-md-11 {
+    width: 91.66%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
 
   [class*="col-"] {
-  float: left;
-  padding: 0 10px;
+    float: left;
+    padding: 0 10px;
   }
 
   .row::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
   }
 
   .width-80 {
@@ -405,27 +457,26 @@ Medium devices (640px and larger)
     margin: 15px 0;
   }
 
-/* ==============================
+  /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {
-  .col-lg-5 {
-  width: 41.66%;
+  @media only screen and (min-width: 1024px) {
+    .col-lg-5 {
+      width: 41.66%;
+    }
+
+    .col-lg-7 {
+      width: 58.33%;
+    }
   }
 
-  .col-lg-7 {
-  width: 58.33%;
-  }
-
-}
-/* ==============================
+  /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+  @media only screen and (min-width: 1440px) {
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
-
-}
