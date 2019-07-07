@@ -19,6 +19,7 @@ body {
 }
 
 header {
+  z-index: 9999;
   background-color: #fff;
   padding: 10px 0 4px;
   box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.75);
@@ -165,6 +166,37 @@ a:active {
 }
 
 /* ========== ABOUT page ========== */
+.cv {
+  max-width: 50%;
+  position: relative;
+  margin: 40px auto;
+}
+
+/* Make the image responsive */
+.cv img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.cv .button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  cursor: pointer;
+  text-align: center;
+}
+
+.cv .button:hover {
+  background-color: #fff;
+  color: #212121;
+  opacity: 1;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
 .mystory-section {
   display: inline-block;
   color: #bf491f;
