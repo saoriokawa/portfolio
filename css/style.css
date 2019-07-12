@@ -197,6 +197,12 @@ a:active {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 640px) {
+  .cv {
+    max-width: 90%;
+  }
+}
+
 .mystory-section {
   display: inline-block;
   color: #bf491f;
@@ -204,10 +210,18 @@ a:active {
   margin: 20px auto 10px;
 }
 
-#about-me {
-  padding: 10px 0;
+#hero-about {
+  background-color: #ffece8;
   display: inline-block;
   width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+#about-me {
+  padding: 10px 0;
+  display: flex;
 }
 
 .skills h3 {
@@ -221,10 +235,10 @@ a:active {
 }
 
 #profile-picture {
-  display: inline-block;
-  width: 60%;
+  display: flex;
   max-width: 350px;
-  margin: 0 auto;
+  max-height: 350px;
+  margin: 20px auto;
 }
 
 .skills > ul {
