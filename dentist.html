@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143805669-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-143805669-1');
+  </script>
+
+  <meta charset="utf-8">
+  <title>Ink Tank - UX Design Portfolio</title>
+  <link rel="shortcut icon" href="img/others/32-32.png">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i&display=swap" rel="stylesheet">
+  <link href="css/lightbox.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ffb691a1dc.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html" class="current-page"><img src="img/Logo@1x.png" alt="Saori Okawa" class="logo"></a>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="current-page">PORTFOLIO</a></li>
+            <li><a href="about.html" class="non-current-page">ABOUT</a></li>
+            <li><a href="#contact" class="non-current-page" onclick="menuToggle()">CONTACT</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="container">
+      <div class="new-section">
+        <!-- Ink Tank intro -->
+        <h2>INK TANK</h2>
+        <p style="text-align:center;">UX Design</p>
+      </div>
+      <div>
+        <!-- Ink Tank picture -->
+        <picture>
+          <source srcset="img/inktank/Mockups@1x.jpg" media="(max-width:767px)">
+          <img src="img/inktank/Mockups@2x.jpg" alt="INK TANK Image">
+        </picture>
+      </div>
+      <div id="inktank-intro">
+        <!-- Ink Tank project info -->
+        <div class="row">
+          <div class="col-md-7">
+            <!-- Ink Tank intro -->
+            <h4>Project Overview</h4>
+            <p>Ink Tank is an app to help people finding their ideal tattoo design, where users can explore inspiration for tattoo designs according to their preferences. 
+              It also allows users to search a tattoo artist and studio. Users can check artists’ portfolios, customer reviews, and other information they need to decide if the artist/studio is right one for them.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <h4>My Role</h4>
+            <p>UX Designer, UI Designer</p>
+            <h4>Tools</h4>
+            <p>Balsamiq, Adobe XD, Sketch, InVision, Usability Hub, FlowMapp, Optimal Workshop</p>
+          </div>
+        </div>
+      </div>
+      <div id="inktank-process">
+        <h3 class="new-section">Design Process</h3>
+        <div>
+          <h4 class="inktank-process">1. Competitive Analysis</h4>
+          <picture>
+            <source srcset="img/inktank/DesignProcess_1@1x.jpg" media="(max-width:767px)">
+            <img src="img/inktank/DesignProcess_1@2x.jpg" alt="Design Process 1">
+          </picture>
+          <p>First of all, in order to understand the current tattoo app market, competitive analysis of the following two apps were carried out.</p>
+          <div class="row">
+            <div class="col-md-6">
+              <picture>
+                <source srcset="img/inktank/TattooPlanet@1x.jpg" media="(max-width:767px)">
+                <img src="img/inktank/TattooPlanet@2x.jpg" alt="Tattoo Planet">
+              </picture>
+            </div>
+            <div class="col-md-6">
+              <picture>
+                <source srcset="img/inktank/Tattoodo@1x.jpg" media="(max-width:767px)">
+                <img src="img/inktank/Tattoodo@2x.jpg" alt="Tattoodo">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4 class="inktank-process">2. User Interviews</h4>
+          <picture>
+            <source srcset="img/inktank/DesignProcess_2@1x.jpg" media="(max-width:767px)">
+            <img src="img/inktank/DesignProcess_2@2x.jpg" alt="Design Process 2">
+          </picture>
+          <p>After getting a basic idea of the current market, user interviews were conducted to find out problems that users have. The interview results revealed the following problems.</p>
+          <div>
+            <div class="width-80">
+              <picture>
+                <source srcset="img/inktank/Problems@1x.jpg" media="(max-width:767px)">
+                <img src="img/inktank/Problems@1x.jpg" alt="Problems">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4 class="inktank-process">3. Personas</h4>
+          <picture>
+            <source srcset="img/inktank/DesignProcess_3@1x.jpg" media="(max-width:767px)">
+            <img src="img/inktank/DesignProcess_3@2x.jpg" alt="Design Process 3">
+          </picture>
+          <p>The user interviews revealed that users go online for the following occasions;</p>
+          <ul>
+            <li>To search tattoo designs and get inspiration</li>
+            <li>To search nearby artist</li>
+            <li>To search tattoo related information (especially the first-timers)</li>
+          </ul>
+          <p>Based on the results, two user personas and their journey maps were created to help me have a clearer image of target users.</p>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="img/inktank/Persona_1@2x.jpg" data-lightbox="Personas">
+                <picture>
+                  <source srcset="img/inktank/Persona_1@1x.jpg" media="(max-width:767px)">
+                  <img src="img/inktank/Persona_1@2x.jpg" alt="Persona 1">
+                </picture>
+              </a>
+            </div>
+            <div class="col-md-6">
+              <a href="img/inktank/Persona_2@2x.jpg" data-lightbox="Personas">
+                <picture>
+                  <source srcset="img/inktank/Persona_2@1x.jpg" media="(max-width:767px)">
+                  <img src="img/inktank/Persona_2@2x.jpg" alt="Persona 2">
+                </picture>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="img/inktank/UserJourney_1@2x.jpg" data-lightbox="User Journey">
+                <picture>
+                  <source srcset="img/inktank/UserJourney_1@1x.jpg" media="(max-width:767px)">
+                  <img src="img/inktank/UserJourney_1@2x.jpg" alt="User Journey 1">
+                </picture>
+              </a>
+            </div>
+            <div class="col-md-6">
+              <a href="img/inktank/UserJourney_2@2x.jpg" data-lightbox="User Journey">
+                <picture>
+                  <source srcset="img/inktank/UserJourney_2@1x.jpg" media="(max-width:767px)">
+                  <img src="img/inktank/UserJourney_2@2x.jpg" alt="User Journey 2">
+                </picture>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4 class="inktank-process">4. User Flow</h4>
+          <picture>
+            <source srcset="img/inktank/DesignProcess_4@1x.jpg" media="(max-width:767px)">
+            <img src="img/inktank/DesignProcess_4@2x.jpg" alt="Design Process 4">
+          </picture>
+          <p>The personas and the journey maps revealed the objectives below that users would have in using the app;</p>
+          <ul>
+            <li>To save and organise favourite designs</li>
+            <li>To share tattoo ideas with friends</li>
+            <li>To check artist’s information</li>
+          </ul>
+          <p>As a next step, tasks which are required for the completion of those objectives were identified and summarised in the following user flows.</p>
+          <div class="row">
+            <div class="col-md-4">
+              <a href="img/inktank/UserFlow_1@2x.jpg" data-lightbox="User Flows">
+                <picture>
+                  <source srcset="img/inktank/UserFlow_1@1x.jpg" media="(max-width:767px)">
+                  <img src="img/inktank/UserFlow_1@2x.jpg" alt="User Flow 1">
+                </picture>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/inktank/UserFlow_2@2x.jpg" data-lightbox="User Flows">
+                <picture>
+                  <source srcset="img/inktank/UserFlow_2@1x.jpg" media="(max-width:767px)">
+                  <img src="img/inktank/UserFlow_2@2x.jpg" alt="User Flow 2">
+                </picture>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/inktank/UserFlow_3@2x.jpg" data-lightbox="User Flows">
+                <picture>
+                  <source srcset="img/inktank/UserFlow_3@1x.jpg" media="(max-width:767px)">
+                  <img src="img/inktank/UserFlow_3@2x.jpg" alt="User Flow 3">
+                </picture>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4 class="inktank-process">5. Sitemaps</h4>
+          <picture>
+            <source srcset="img/inktank/DesignProcess_5@1x.jpg" media="(max-width:767px)">
+            <img src="img/inktank/DesignProcess_5@2x.jpg" alt="Design Process 5">
+          </picture>
+          <p>Using the user flows as a basic idea, sitemaps were established to visualise the entire structure of the app. Card sorting was also conducted to confirm the clarity of the structure.</p>
+          <div class="row width-80" style="display: flex;">
+            <picture>
+              <source srcset="img/inktank/Sitemaps@1x.jpg" media="(max-width:767px)">
+              <img src="img/inktank/Sitemaps@2x.jpg" alt="Sitemaps">
+            </picture>
+          </div>
+        </div>
+        <div>
+          <h4 class="inktank-process">6. Wireframes</h4>
+          <picture>
+            <source srcset="img/inktank/DesignProcess_6@1x.jpg" media="(max-width:767px)">
+            <img src="img/inktank/DesignProcess_6@2x.jpg" alt="Design Process 6">
+          </picture>
+          <p>Based on the user flows and the sitemaps above, wireframes were created. The process started from low-fidelity wireframes with a pen and paper, followed by mid-fidelity wireframes created using Balsamiq. Finally, high-fidelity wireframes
+            were made utilising Adobe XD and Sketch.</p>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="img/inktank/Mid-FidelityWireframes@2x.png" data-lightbox="Wireframes">
+                <picture>
+                  <source srcset="img/inktank/Mid-FidelityWireframes@1x.png" media="(max-width:767px)">
+                  <img src="img/inktank/Mid-FidelityWireframes@2x.png" alt="Mid-Fidelity Wireframes">
+                </picture>
+              </a>
+              <h5>Samples: Mid-fidelity wireframes</h5>
+            </div>
+            <div class="col-md-6">
+              <a href="img/inktank/High-FidelityWireframes-1@2x.png" data-lightbox="Wireframes">
+                <picture>
+                  <source srcset="img/inktank/High-FidelityWireframes-1@1x.png" media="(max-width:767px)">
+                  <img src="img/inktank/High-FidelityWireframes-1@2x.png" alt="High-Fidelity Wireframes ver.1">
+                </picture>
+              </a>
+              <h5>Samples: High-fidelity wireframes (ver. 1)</h5>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4 class="inktank-process">7. Usability Tests</h4>
+          <picture>
+            <source srcset="img/inktank/DesignProcess_7@1x.jpg" media="(max-width:767px)">
+            <img src="img/inktank/DesignProcess_7@2x.jpg" alt="Design Process 7">
+          </picture>
+          <p>In order to detect errors and improve the design, moderated in-person usability tests were carried out with 6 test participants. The participants were given some scenario tasks, and the test results were analysed using affinity maps
+            and rainbow spreadsheet.</p>
+          <div class="row">
+            <a href="img/inktank/Observation@2x.jpg" data-lightbox="Usability Tests">
+              <div class="col-md-4">
+                <picture>
+                  <source srcset="img/inktank/Observation@1x.jpg" media="(max-width:767px)">
+                  <img src="img/inktank/Observation@2x.jpg" alt="Observation">
+                </picture>
+              </div>
+            </a>
+            <div class="col-md-4">
+              <a href="img/inktank/PositiveQuotes@2x.jpg" data-lightbox="Usability Tests">
+                <picture>
+                  <source srcset="img/inktank/PositiveQuotes@1x.jpg" media="(max-width:767px)">
+                  <img src="img/inktank/PositiveQuotes@2x.jpg" alt="Positive Quotes">
+                </picture>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="img/inktank/NegativeQuotes&Errors@2x.jpg" data-lightbox="Usability Tests">
+                <picture>
+                  <source srcset="img/inktank/NegativeQuotes&Errors@1x.jpg" media="(max-width:767px)">
+                  <img src="img/inktank/NegativeQuotes&Errors@2x.jpg" alt="Negative Quotes & Errors">
+                </picture>
+              </a>
+            </div>
+            <div>
+              <picture>
+                <source srcset="img/inktank/RainbowSpreadsheet@1x.jpg" media="(max-width:767px)">
+                <img src="img/inktank/RainbowSpreadsheet@2x.jpg" alt="Rainbow Spreadsheet">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4 class="inktank-process">8. Iteration</h4>
+          <picture>
+            <source srcset="img/inktank/DesignProcess_8@1x.jpg" media="(max-width:767px)">
+            <img src="img/inktank/DesignProcess_8@2x.jpg" alt="Design Process 8">
+          </picture>
+          <p>The errors and other points to improve which were found in the usability tests were addressed in the process of iteration. The changes made through this process include;</p>
+          <ul>
+            <li>Bringing search function to the top screen to reduce the number of steps that users would take</li>
+            <li>Clarifying each icon with text description</li>
+            <li>Enlarging pictures to deliver information properly</li>
+            <li>Introducing primary colour to the top screen</li>
+          </ul>
+          <div class="row width-80" style="display: flex;">
+            <picture>
+              <source srcset="img/inktank/Feed@1x.jpg" media="(max-width:767px)">
+              <img src="img/inktank/Feed@2x.jpg" alt="Development of Feed screen">
+            </picture>
+          </div>
+        </div>
+        <div>
+          <h4 class="inktank-process">Finally...</h4>
+          <p>Curious how Ink Tank actually works? Click the image below to check clickable prototypes.</p>
+          <div class="image-link">
+            <a href="https://invis.io/QWRLL6J96E8">
+              <picture>
+                <source srcset="img/inktank/High-FidelityWireframes@1x.png" media="(max-width:767px)">
+                <img src="img/inktank/High-FidelityWireframes@2x.png" alt="Link to the clickable prototypes">
+              </picture>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="display: flex;">
+        <a href="#top" class="button">Back to top</a>
+      </div>
+    </div>
+  </main>
+
+  <footer id="contact">
+    <div class="container">
+      <h2>Want to get in touch? <span>Drop me a line!</span></h2>
+      <p>I’m currently looking for an opportunity to work in the Netherlands or remotely.
+        <br>
+        Feel free to contact me!</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="social-media new-section">
+            <p><i class="fas fa-envelope fa-lg"></i> &nbsp;&nbsp;<a href="mailto:saoriokawa@gmail.com">saoriokawa@gmail.com</a></p>
+            <p><i class="fas fa-phone-alt fa-lg"></i> &nbsp;&nbsp;<a href="tel:+31642947663">+31 6 4294 7663</a></p>
+            <!-- LinkedIn -->
+            <p><i class="fab fa-linkedin fa-lg"></i> &nbsp;&nbsp;<a href="https://www.linkedin.com/in/saoriokawa/" target="_blank">LinkedIn</a></p>
+            <!-- Behance -->
+            <p><i class="fab fa-behance-square fa-lg"></i> &nbsp;&nbsp;<a href="https://www.behance.net/saoriokawa" target="_blank">Behance</a></p>
+
+          </div>
+        </div>
+        <div class="col-md-8">
+          <!-- www.123formbuilder.com script begins here -->
+          <script type="text/javascript" defer src="https://www.123formbuilder.com/embed/4904646.js" data-role="form" data-default-width="650px"></script><!-- www.123formbuilder.com script ends here -->
+        </div>
+      </div>
+      <h5>© Saori Okawa. All rights reserved.</h5>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/lightbox.js"></script>
+</body>
+
+</html>
