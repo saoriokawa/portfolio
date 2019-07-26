@@ -414,6 +414,36 @@ nav > ul > li > a:active {
   margin: 0 auto;
 }
 
+/* ========== DENTIST page ========== */
+.dentist-process {
+  color: #01579B;
+}
+
+.dentist-border {
+  padding: 30px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #01579B;
+}
+
+.dentist-border > ol {
+  margin-block-end: 0;
+}
+
+.dentist-border > ul {
+  margin-block-end: 0;
+}
+
+.dentist-interview-results {
+  border-left: 20px solid #01579B;
+  padding: 10px 10px 10px 20px;
+  margin: 20px;
+}
+
+.dentist-interview-results > b {
+  color: #01579B;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -528,11 +558,6 @@ Medium devices (640px and larger)
     width: 80%;
     margin: 0 auto;
   }
-
-  #inktank-intro h4 {
-    margin: 15px 0;
-  }
-}
 
 /* ==============================
 Large devices (1024px or larger)
