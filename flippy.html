@@ -24,20 +24,19 @@
   <link href="css/lightbox.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/ffb691a1dc.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html" class="current-page"><img src="img/logo_light.png" alt="Saori Okawa" class="logo"></a>
+        <a href="index.html" class="current-page"><img src="img/Logo@1x.png" alt="Saori Okawa" class="logo"></a>
         <nav>
           <ul>
             <li><a href="index.html" class="current-page">PORTFOLIO</a></li>
             <li><a href="about.html" class="non-current-page">ABOUT</a></li>
             <li><a href="#contact" class="non-current-page" onclick="menuToggle()">CONTACT</a></li>
-            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="material-icons">menu</i></a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
       </div>
@@ -45,42 +44,54 @@
   </header>
 
   <main id="top">
-    <div class="container main-contents">
-      <div class="subsection-24">
+    <div class="container">
+      <div>
         <!-- Flippy intro -->
-        <h1>FLIPPY</h1>
-        <h2>UX Design / Research</h2>
+        <h2>FLIPPY</h2>
+        <p style="text-align: center">UX Design</p>
+      </div>
+      <div>
+        <!-- Flippy picture -->
         <picture>
           <source srcset="img/flippy/Mockups@1x.jpg" media="(max-width:767px)">
           <img src="img/flippy/Mockups@2x.jpg" alt="FLIPPY Image">
         </picture>
       </div>
-      <div class="subsection-24" id="flippy-intro">
+      <div id="flippy-intro">
         <!-- Flippy project info -->
-        <h3>Project Overview</h3>
-        <div class="subsection-row-40">
+        <div class="row">
           <div class="col-md-7">
+            <!-- Flippy intro -->
+            <h4>Project Overview</h4>
             <p>Flippy is a flashcard app to help learning vacabulary of new languages. Users can create their own set of flashcards or use a set created by another user to study vocabulary. It allows users to study vocabulary through different modes,
               such as spell quiz and test.</p>
           </div>
           <div class="col-md-5">
             <h4>My Role</h4>
-            <p>UX/UI Designer</p>
-            <br>
+            <p>UX Designer, UI Designer</p>
             <h4>Tools</h4>
             <p>Balsamiq, Sketch, InVision, FlowMapp</p>
           </div>
         </div>
       </div>
-      <div class="subsection-40" id="flippy-process">
-        <div class="subsection-24">
-          <h3 style="width: 100%">Design Process</h3>
-          <div class="subsection-16">
-            <h4 class="flippy-process">1. Competitive Analysis</h4>
-            <p>First of all, competitive analysis of the three apps below were carried out.</p>
-            <h4>Brainscape</h4>
-            <div class="subsection-row-40">
-              <div class="col-md-6">
+      <div id="flippy-process">
+        <h3 class="new-section">Design Process</h3>
+        <div>
+          <h4 class="flippy-process">1. Competitive Analysis</h4>
+          <picture>
+            <source srcset="img/flippy/DesignProcess_1@1x.jpg" media="(max-width:767px)">
+            <img src="img/flippy/DesignProcess_1@2x.jpg" alt="Design Process 1">
+          </picture>
+          <p>First of all, competitive analysis of the three apps below were carried out.</p>
+          <div class="center">
+            <div class="row">
+              <h4>Brainscape</h4>
+            </div>
+            <div class="row">
+              <div class="col-md-1">
+                <br>
+              </div>
+              <div class="col-md-5">
                 <a href="img/flippy/1_Brainscape_1.png" data-lightbox="Competitive Analysis">
                   <picture>
                     <source srcset="img/flippy/1_Brainscape_1.png" media="(max-width:767px)">
@@ -88,7 +99,7 @@
                   </picture>
                 </a>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-5">
                 <a href="img/flippy/1_Brainscape_2.png" data-lightbox="Competitive Analysis">
                   <picture>
                     <source srcset="img/flippy/1_Brainscape_2.png" media="(max-width:767px)">
@@ -96,10 +107,18 @@
                   </picture>
                 </a>
               </div>
+              <div class="col-md-1">
+                <br>
+              </div>
             </div>
-            <h4>Quizlet</h4>
-            <div class="subsection-row-40">
-              <div class="col-md-6">
+            <div class="row">
+              <h4>Quizlet</h4>
+            </div>
+            <div class="row">
+              <div class="col-md-1">
+                <br>
+              </div>
+              <div class="col-md-5">
                 <a href="img/flippy/1_Quizlet_1.png" data-lightbox="Competitive Analysis">
                   <picture>
                     <source srcset="img/flippy/1_Quizlet_1.png" media="(max-width:767px)">
@@ -107,7 +126,7 @@
                   </picture>
                 </a>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-5">
                 <a href="img/flippy/1_Quizlet_2.png" data-lightbox="Competitive Analysis">
                   <picture>
                     <source srcset="img/flippy/1_Quizlet_2.png" media="(max-width:767px)">
@@ -115,10 +134,18 @@
                   </picture>
                 </a>
               </div>
+              <div class="col-md-1">
+                <br>
+              </div>
             </div>
-            <h4>Tinycards</h4>
-            <div class="subsection-row-40">
-              <div class="col-md-6">
+            <div class="row">
+              <h4>Tinycards</h4>
+            </div>
+            <div class="row">
+              <div class="col-md-1">
+                <br>
+              </div>
+              <div class="col-md-5">
                 <a href="img/flippy/1_Tinycards_1.png" data-lightbox="Competitive Analysis">
                   <picture>
                     <source srcset="img/flippy/1_Tinycards_1.png" media="(max-width:767px)">
@@ -126,7 +153,7 @@
                   </picture>
                 </a>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-5">
                 <a href="img/flippy/1_Tinycards_2.png" data-lightbox="Competitive Analysis">
                   <picture>
                     <source srcset="img/flippy/1_Tinycards_2.png" media="(max-width:767px)">
@@ -134,187 +161,224 @@
                   </picture>
                 </a>
               </div>
-            </div>
-          </div>
-          <div class="subsection-16">
-            <h4 class="flippy-process">2. User Interviews</h4>
-            <p>After getting a basic idea of the current market, user interviews were conducted to find out problems that users have. The interview results revealed that users face some common problems.</p>
-            <p>They are looking for..</p>
-            <div>
-              <ul>
-                <li>Time/Space to write down vocabulary to memorise it</li>
-                <li>A way to effectively learn articles for each noun</li>
-                <li>Variation in vocabulary learning process</li>
-              </ul>
-            </div>
-          </div>
-          <div class="subsection-16">
-            <h4 class="flippy-process">3. Personas</h4>
-            <p>Based on the results of the interviews, I created a user persona to make an image of target users clearer.</p>
-            <div style="display: flex;">
-              <picture id="flippy-persona">
-                <source srcset="img/flippy/3_Persona.png" media="(max-width:767px)">
-                <img src="img/flippy/3_Persona.png" alt="Persona">
-              </picture>
-            </div>
-          </div>
-          <div class="subsection-16">
-            <h4 class="flippy-process">4. User Flow</h4>
-              <div>
-                <p>The persona, Cathy, revealed that users would use the app to deal with the following challenges;</p>
-                <ul>
-                  <li>Cathy doesn't have time to write down vocabulary</li>
-                  <li>Cathy finds it difficult to memorise articles for each noun</li>
-                  <li>Cathy loses motivation when the learning process becomes monotone</li>
-                </ul>
-                <p>With these challenges in mind, user flows were established as a summary of tasks that users would complete.</p>
-              </div>
-            <div class="subsection-row-40">
-              <div class="col-md-8">
-                <a href="img/flippy/4_UserFlow1.png" data-lightbox="User Flow">
-                  <picture>
-                    <source srcset="img/flippy/4_UserFlow1.png" media="(max-width:767px)">
-                    <img src="img/flippy/4_UserFlow1.png" alt="User Flow 1">
-                  </picture>
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a href="img/flippy/4_UserFlow2.png" data-lightbox="User Flow">
-                  <picture>
-                    <source srcset="img/flippy/4_UserFlow2.png" media="(max-width:767px)">
-                    <img src="img/flippy/4_UserFlow2.png" alt="User Flow 2">
-                  </picture>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="subsection-16">
-            <h4 class="flippy-process">5. Sitemaps</h4>
-            <p>Using the user flows as a basic idea, sitemaps were established to visualise the entire structure of the app.</p>
-            <div class="row width-80" style="display: flex;">
-              <picture>
-                <source srcset="img/flippy/5_Sitemaps.png" media="(max-width:767px)">
-                <img src="img/flippy/5_Sitemaps.png" alt="Sitemaps">
-              </picture>
-            </div>
-          </div>
-          <div class="subsection-16">
-            <h4 class="flippy-process">6. Wireframes</h4>
-            <p>Based on the user flows and the sitemaps above, wireframes were created. The process started from low-fidelity wireframes with a pen and paper, followed by mid-fidelity wireframes created using Balsamiq. Finally, high-fidelity wireframes
-              were made utilising Sketch.</p>
-            <div class="subsection-row-40">
-              <div class="col-md-6">
-                <a href="img/flippy/Mid-fidelityWireframes@2x.jpg" data-lightbox="Wireframes">
-                  <picture>
-                    <source srcset="img/flippy/Mid-fidelityWireframes@1x.jpg" media="(max-width:767px)">
-                    <img src="img/flippy/Mid-fidelityWireframes@2x.jpg" alt="Mid-Fidelity Wireframes">
-                  </picture>
-                </a>
-                <h5>Samples: Mid-fidelity wireframes</h5>
-              </div>
-              <div class="col-md-6">
-                <a href="img/flippy/High-fidelityWireframes-1@2x.jpg" data-lightbox="Wireframes">
-                  <picture>
-                    <source srcset="img/flippy/High-fidelityWireframes-1@1x.jpg" media="(max-width:767px)">
-                    <img src="img/flippy/High-fidelityWireframes-1@2x.jpg" alt="High-Fidelity Wireframes ver.1">
-                  </picture>
-                </a>
-                <h5>Samples: High-fidelity wireframes (ver. 1)</h5>
-              </div>
-            </div>
-          </div>
-          <div class="subsection-16">
-            <h4 class="flippy-process">7. Usability Tests</h4>
-            <p>With the first version of high fidelity-wireframes, I conducted usability tests with five participants. The summary of the tests can be found in the images below.</p>
-            <div class="subsection-row-40">
-              <div class="col-md-4">
-                <a href="img/flippy/7_Flippy_UsabilityTestsReport1.jpg" data-lightbox="Usability Tests">
-                  <picture>
-                    <source srcset="img/flippy/7_Flippy_UsabilityTestsReport1.jpg" media="(max-width:767px)">
-                    <img src="img/flippy/7_Flippy_UsabilityTestsReport1.jpg" alt="Usability Tests Report 1">
-                  </picture>
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a href="img/flippy/7_Flippy_UsabilityTestsReport2.jpg" data-lightbox="Usability Tests">
-                  <picture>
-                    <source srcset="img/flippy/7_Flippy_UsabilityTestsReport2.jpg" media="(max-width:767px)">
-                    <img src="img/flippy/7_Flippy_UsabilityTestsReport2.jpg" alt="Usability Tests Report 2">
-                  </picture>
-                </a>
-              </div>
-              <div class="col-md-4">
-                <a href="img/flippy/7_Flippy_UsabilityTestsReport3.jpg" data-lightbox="Usability Tests">
-                  <picture>
-                    <source srcset="img/flippy/7_Flippy_UsabilityTestsReport3.jpg" media="(max-width:767px)">
-                    <img src="img/flippy/7_Flippy_UsabilityTestsReport3.jpg" alt="Usability Tests Report 3">
-                  </picture>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="subsection-16">
-            <h4 class="flippy-process">8. Iteration</h4>
-            <p>The high-fidelity wireframes were updated in accordance with the results of the usability tests.</p>
-            <p>The issue with high severity, for example, was dealt with by adding tutorial process after signing up, so that users have a chance to learn the difference between creating a new study set and adding a premade study set.</p>
-            <div>
-              <picture>
-                <source srcset="img/flippy/High-fidelityWireframes_Tutorial@1x.jpg" media="(max-width:767px)">
-                <img src="img/flippy/High-fidelityWireframes_Tutorial@2x.jpg" alt="Tutorial">
-              </picture>
-              <h5>Samples: Tutorial Procedure</h5>
-            </div>
-          </div>
-          <div class="subsection-16">
-            <h4 class="flippy-process">Finally..</h4>
-            <div class="subsection-row-40">
-              <div class="col-md-6">
-                <p>The iteration is an endless process!</p>
-                <p>But do you want to navigate through the current version of FLIPPY?</p>
-                <p>Click on the image of the prototype map to check clickable prototypes.</p>
-              </div>
-              <div class="image-link col-md-6">
-                <a href="https://sketch.cloud/s/oL2eQ/a/7kdwe7/play">
-                  <picture>
-                    <source srcset="img/flippy/Prototypes@1x.jpg" media="(max-width:767px)">
-                    <img src="img/flippy/Prototypes@2x.jpg" alt="Link to the clickable prototypes">
-                  </picture>
-                </a>
+              <div class="col-md-1">
+                <br>
               </div>
             </div>
           </div>
         </div>
+        <div>
+          <h4 class="flippy-process">2. User Interviews</h4>
+          <picture>
+            <source srcset="img/flippy/DesignProcess_2@1x.jpg" media="(max-width:767px)">
+            <img src="img/flippy/DesignProcess_2@2x.jpg" alt="Design Process 2">
+          </picture>
+          <p>After getting a basic idea of the current market, user interviews were conducted to find out problems that users have. The interview results revealed that users face some common problems.</p>
+          <p>They are looking for..</p>
+          <div>
+            <ul>
+              <li>Time/Space to write down vocabulary to memorise it</li>
+              <li>A way to effectively learn articles for each noun</li>
+              <li>Variation in vocabulary learning process</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h4 class="flippy-process">3. Personas</h4>
+          <picture>
+            <source srcset="img/flippy/DesignProcess_3@1x.jpg" media="(max-width:767px)">
+            <img src="img/flippy/DesignProcess_3@2x.jpg" alt="Design Process 3">
+          </picture>
+          <p>Based on the results of the interviews, I created a user persona to make an image of target users clearer.</p>
+          <div style="display: flex;">
+            <picture id="flippy-persona">
+              <source srcset="img/flippy/3_Persona.png" media="(max-width:767px)">
+              <img src="img/flippy/3_Persona.png" alt="Persona">
+            </picture>
+          </div>
+        </div>
       </div>
-      <div style="display: flex;">
-        <a href="#top" class="button secondary">Back to top</a>
+      <div>
+        <h4 class="flippy-process">4. User Flow</h4>
+        <picture>
+          <source srcset="img/flippy/DesignProcess_4@1x.jpg" media="(max-width:767px)">
+          <img src="img/flippy/DesignProcess_4@2x.jpg" alt="Design Process 4">
+        </picture>
+        <p>The persona, Cathy, revealed that users would use the app to deal with the following challenges;</p>
+        <ul>
+          <li>Cathy doesn't have time to write down vocabulary</li>
+          <li>Cathy finds it difficult to memorise articles for each noun</li>
+          <li>Cathy loses motivation when the learning process becomes monotone</li>
+        </ul>
+        <p>With these challenges in mind, user flows were established as a summary of tasks that users would complete.</p>
+        <div class="row">
+          <div class="col-md-1">
+            <br>
+          </div>
+          <div class="col-md-6">
+            <a href="img/flippy/4_UserFlow1.png" data-lightbox="User Flow">
+              <picture>
+                <source srcset="img/flippy/4_UserFlow1.png" media="(max-width:767px)">
+                <img src="img/flippy/4_UserFlow1.png" alt="User Flow 1">
+              </picture>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="img/flippy/4_UserFlow2.png" data-lightbox="User Flow">
+              <picture>
+                <source srcset="img/flippy/4_UserFlow2.png" media="(max-width:767px)">
+                <img src="img/flippy/4_UserFlow2.png" alt="User Flow 2">
+              </picture>
+            </a>
+          </div>
+          <div class="col-md-1">
+            <br>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4 class="flippy-process">5. Sitemaps</h4>
+        <picture>
+          <source srcset="img/flippy/DesignProcess_5@1x.jpg" media="(max-width:767px)">
+          <img src="img/flippy/DesignProcess_5@2x.jpg" alt="Design Process 5">
+        </picture>
+        <p>Using the user flows as a basic idea, sitemaps were established to visualise the entire structure of the app.</p>
+        <div class="row width-80" style="display: flex;">
+          <picture>
+            <source srcset="img/flippy/5_Sitemaps.png" media="(max-width:767px)">
+            <img src="img/flippy/5_Sitemaps.png" alt="Sitemaps">
+          </picture>
+        </div>
+      </div>
+      <div>
+        <h4 class="flippy-process">6. Wireframes</h4>
+        <picture>
+          <source srcset="img/flippy/DesignProcess_6@1x.jpg" media="(max-width:767px)">
+          <img src="img/flippy/DesignProcess_6@2x.jpg" alt="Design Process 6">
+        </picture>
+        <p>Based on the user flows and the sitemaps above, wireframes were created. The process started from low-fidelity wireframes with a pen and paper, followed by mid-fidelity wireframes created using Balsamiq. Finally, high-fidelity wireframes
+          were made utilising Sketch.</p>
+        <div class="row">
+          <div class="col-md-6">
+            <a href="img/flippy/Mid-fidelityWireframes@2x.jpg" data-lightbox="Wireframes">
+              <picture>
+                <source srcset="img/flippy/Mid-fidelityWireframes@1x.jpg" media="(max-width:767px)">
+                <img src="img/flippy/Mid-fidelityWireframes@2x.jpg" alt="Mid-Fidelity Wireframes">
+              </picture>
+            </a>
+            <h5>Samples: Mid-fidelity wireframes</h5>
+          </div>
+          <div class="col-md-6">
+            <a href="img/flippy/High-fidelityWireframes-1@2x.jpg" data-lightbox="Wireframes">
+              <picture>
+                <source srcset="img/flippy/High-fidelityWireframes-1@1x.jpg" media="(max-width:767px)">
+                <img src="img/flippy/High-fidelityWireframes-1@2x.jpg" alt="High-Fidelity Wireframes ver.1">
+              </picture>
+            </a>
+            <h5>Samples: High-fidelity wireframes (ver. 1)</h5>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4 class="flippy-process">7. Usability Tests</h4>
+        <picture>
+          <source srcset="img/flippy/DesignProcess_7@1x.jpg" media="(max-width:767px)">
+          <img src="img/flippy/DesignProcess_7@2x.jpg" alt="Design Process 7">
+        </picture>
+        <p>With the first version of high fidelity-wireframes, I conducted usability tests with five participants. The summary of the tests can be found in the images below.</p>
+        <div class="row">
+          <div class="col-md-4">
+            <a href="img/flippy/7_Flippy_UsabilityTestsReport1.jpg" data-lightbox="Usability Tests">
+              <picture>
+                <source srcset="img/flippy/7_Flippy_UsabilityTestsReport1.jpg" media="(max-width:767px)">
+                <img src="img/flippy/7_Flippy_UsabilityTestsReport1.jpg" alt="Usability Tests Report 1">
+              </picture>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="img/flippy/7_Flippy_UsabilityTestsReport2.jpg" data-lightbox="Usability Tests">
+              <picture>
+                <source srcset="img/flippy/7_Flippy_UsabilityTestsReport2.jpg" media="(max-width:767px)">
+                <img src="img/flippy/7_Flippy_UsabilityTestsReport2.jpg" alt="Usability Tests Report 2">
+              </picture>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="img/flippy/7_Flippy_UsabilityTestsReport3.jpg" data-lightbox="Usability Tests">
+              <picture>
+                <source srcset="img/flippy/7_Flippy_UsabilityTestsReport3.jpg" media="(max-width:767px)">
+                <img src="img/flippy/7_Flippy_UsabilityTestsReport3.jpg" alt="Usability Tests Report 3">
+              </picture>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4 class="flippy-process">8. Iteration</h4>
+        <picture>
+          <source srcset="img/flippy/DesignProcess_8@1x.jpg" media="(max-width:767px)">
+          <img src="img/flippy/DesignProcess_8@2x.jpg" alt="Design Process 8">
+        </picture>
+        <p>The high-fidelity wireframes were updated in accordance with the results of the usability tests.</p>
+        <p>The issue with high severity, for example, was dealt with by adding tutorial process after signing up, so that users have a chance to learn the difference between creating a new study set and adding a premade study set.</p>
+        <div>
+          <picture>
+            <source srcset="img/flippy/High-fidelityWireframes_Tutorial@1x.jpg" media="(max-width:767px)">
+            <img src="img/flippy/High-fidelityWireframes_Tutorial@2x.jpg" alt="Tutorial">
+          </picture>
+          <h5>Samples: Tutorial Procedure</h5>
+        </div>
+      </div>
+      <div>
+        <h4 class="flippy-process">Finally..</h4>
+        <div class="row">
+          <div class="col-md-6">
+            <p>The iteration is an endless process!</p>
+            <p>But do you want to navigate through the current version of FLIPPY?</p>
+            <p>Click on the image of the prototype map to check clickable prototypes.</p>
+          </div>
+          <div class="image-link col-md-6">
+            <a href="https://sketch.cloud/s/oL2eQ/a/7kdwe7/play">
+              <picture>
+                <source srcset="img/flippy/Prototypes@1x.jpg" media="(max-width:767px)">
+                <img src="img/flippy/Prototypes@2x.jpg" alt="Link to the clickable prototypes">
+              </picture>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="display: flex;">
+        <a href="#top" class="button">Back to top</a>
       </div>
     </div>
   </main>
 
   <footer id="contact">
     <div class="container">
-      <h3>WANT TO GET IN TOUCH? <span>DROP ME A LINE!</span></h3>
-      <p style="margin: 16px 0">I’m open for opportunities in the Netherlands or remote projects.
+      <h2>Want to get in touch? <span>Drop me a line!</span></h2>
+      <p>I’m currently looking for an opportunity to work in the Netherlands or remotely.
         <br>
         Feel free to contact me!</p>
-      <div class="social-media">
-        <a href="mailto:saoriokawa@gmail.com">
-          <i class="material-icons" style="margin: 8px;">email</i>
-        </a>
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/saoriokawa/" target="_blank">
-          <i class='fab fa-linkedin' style='margin: 8px; font-size:24px'></i>
-        </a>
-        <!-- Behance -->
-        <a href="https://www.behance.net/saoriokawa" target="_blank">
-          <i class='fab fa-behance-square' style='margin: 8px; font-size:24px'></i>
-        </a>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="social-media new-section">
+            <p><i class="fas fa-envelope fa-lg"></i> &nbsp;&nbsp;<a href="mailto:saoriokawa@gmail.com">saoriokawa@gmail.com</a></p>
+            <p><i class="fas fa-phone-alt fa-lg"></i> &nbsp;&nbsp;<a href="tel:+31642947663">+31 6 4294 7663</a></p>
+            <!-- LinkedIn -->
+            <p><i class="fab fa-linkedin fa-lg"></i> &nbsp;&nbsp;<a href="https://www.linkedin.com/in/saoriokawa/" target="_blank">LinkedIn</a></p>
+            <!-- Behance -->
+            <p><i class="fab fa-behance-square fa-lg"></i> &nbsp;&nbsp;<a href="https://www.behance.net/saoriokawa" target="_blank">Behance</a></p>
+
+          </div>
+        </div>
+        <div class="col-md-8">
+          <!-- www.123formbuilder.com script begins here -->
+          <script type="text/javascript" defer src="https://www.123formbuilder.com/embed/4904646.js" data-role="form" data-default-width="650px"></script><!-- www.123formbuilder.com script ends here -->
+        </div>
       </div>
-    </div>
-    <h5>© Saori Okawa. All rights reserved.</h5>
+      <h5>© Saori Okawa. All rights reserved.</h5>
     </div>
   </footer>
-
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
   <script src="js/lightbox.js"></script>

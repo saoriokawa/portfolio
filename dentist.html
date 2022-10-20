@@ -24,20 +24,19 @@
   <link href="css/lightbox.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/ffb691a1dc.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html" class="current-page"><img src="img/logo_light.png" alt="Saori Okawa" class="logo"></a>
+        <a href="index.html" class="current-page"><img src="img/Logo@1x.png" alt="Saori Okawa" class="logo"></a>
         <nav>
           <ul>
             <li><a href="index.html" class="current-page">PORTFOLIO</a></li>
             <li><a href="about.html" class="non-current-page">ABOUT</a></li>
             <li><a href="#contact" class="non-current-page" onclick="menuToggle()">CONTACT</a></li>
-            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="material-icons">menu</i></a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
       </div>
@@ -45,83 +44,92 @@
   </header>
 
   <main id="top">
-    <div class="container main-contents">
-      <div class="subsection-24">
+    <div class="container">
+      <div class="new-section">
         <!-- Dentist intro -->
-        <h1>ONLINE BOOKING PLATFORM</h1>
-        <h2>UX Design / Research</h2>
+        <h2>ONLINE BOOKING PLATFORM</h2>
+        <p style="text-align:center;">UX Design</p>
+      </div>
+      <div>
+        <!-- Dentist picture -->
         <picture>
           <source srcset="img/dentist/Mockups@1x.jpg" media="(max-width:767px)">
           <img src="img/dentist/Mockups@2x.jpg" alt="ONLINE BOOKING PLATFORM Image">
         </picture>
       </div>
-      <div class="subsection-24" id="dentist-intro">
+      <div id="dentist-intro">
         <!-- Dentist project info -->
-        <h3>Project Overview</h3>
-        <div class="subsection-row-40">
+        <div class="row">
           <div class="col-md-7">
+            <!-- Dentist intro -->
+            <h4>Project Overview</h4>
             <p>I worked on a 3-day design assignment to create an interface that allows users to book an appointment online with the dentist.</p>
           </div>
           <div class="col-md-5">
             <h4>My Role</h4>
             <p>UX Designer</p>
-            <br>
             <h4>Tools</h4>
             <p>Balsamiq, Sketch</p>
           </div>
         </div>
       </div>
-      <div class="subsection-40" id="dentist-process">
-        <div class="subsection-24">
-        <h3 style="width: 100%">Design Process</h3>
-          <div class="subsection-16">
-            <h4 class="dentist-process">1. Competitive Analysis</h4>
-            <p>First of all, in order to get a general image of the current dentist online booking system, I conducted competitive analysis. I analysed the following two dental clinic websites.</p>
-            <div class="width-80">
-              <picture>
-                <source srcset="img/dentist/CompetitiveAnalysis@1x.jpg" media="(max-width:767px)">
-                <img src="img/dentist/CompetitiveAnalysis@2x.jpg" alt="Competitive Analysis">
-              </picture>
+      <div id="dentist-process">
+        <h3 class="new-section">Design Process</h3>
+        <div>
+          <h4 class="dentist-process">1. Competitive Analysis</h4>
+          <picture>
+            <source srcset="img/dentist/DesignProcess_1@1x.jpg" media="(max-width:767px)">
+            <img src="img/dentist/DesignProcess_1@2x.jpg" alt="Design Process 1">
+          </picture>
+          <p>First of all, in order to get a general image of the current dentist online booking system, I conducted competitive analysis. I analysed the following two dental clinic websites.</p>
+          <div class="width-80">
+            <picture>
+              <source srcset="img/dentist/CompetitiveAnalysis@1x.jpg" media="(max-width:767px)">
+              <img src="img/dentist/CompetitiveAnalysis@2x.jpg" alt="Competitive Analysis">
+            </picture>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <a href="img/dentist/Competitor1_pro@2x.jpg" data-lightbox="Competitive Analysis">
+                <picture>
+                  <source srcset="img/dentist/Competitor1_pro@1x.jpg" media="(max-width:767px)">
+                  <img src="img/dentist/Competitor1_pro@2x.jpg" alt="Competitor 1 - Pros">
+                </picture>
+              </a>
             </div>
-            <div class="subsection-row-40">
-              <div class="col-md-3">
-                <a href="img/dentist/Competitor1_pro@2x.jpg" data-lightbox="Competitive Analysis">
-                  <picture>
-                    <source srcset="img/dentist/Competitor1_pro@1x.jpg" media="(max-width:767px)">
-                    <img src="img/dentist/Competitor1_pro@2x.jpg" alt="Competitor 1 - Pros">
-                  </picture>
-                </a>
-              </div>
-              <div class="col-md-3">
-                <a href="img/dentist/Competitor1_con@2x.jpg" data-lightbox="Competitive Analysis">
-                  <picture>
-                    <source srcset="img/dentist/Competitor1_con@1x.jpg" media="(max-width:767px)">
-                    <img src="img/dentist/Competitor1_con@2x.jpg" alt="Competitor 1 - Cons">
-                  </picture>
-                </a>
-              </div>
-              <div class="col-md-3">
-                <a href="img/dentist/Competitor2_pro@2x.jpg" data-lightbox="Competitive Analysis">
-                  <picture>
-                    <source srcset="img/dentist/Competitor2_pro@1x.jpg" media="(max-width:767px)">
-                    <img src="img/dentist/Competitor2_pro@2x.jpg" alt="Competitor 2 - Pros">
-                  </picture>
-                </a>
-              </div>
-              <div class="col-md-3">
-                <a href="img/dentist/Competitor2_con@2x.jpg" data-lightbox="Competitive Analysis">
-                  <picture>
-                    <source srcset="img/dentist/Competitor2_con@1x.jpg" media="(max-width:767px)">
-                    <img src="img/dentist/Competitor2_con@2x.jpg" alt="Competitor 2 - Cons">
-                  </picture>
-                </a>
-              </div>
+            <div class="col-md-3">
+              <a href="img/dentist/Competitor1_con@2x.jpg" data-lightbox="Competitive Analysis">
+                <picture>
+                  <source srcset="img/dentist/Competitor1_con@1x.jpg" media="(max-width:767px)">
+                  <img src="img/dentist/Competitor1_con@2x.jpg" alt="Competitor 1 - Cons">
+                </picture>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="img/dentist/Competitor2_pro@2x.jpg" data-lightbox="Competitive Analysis">
+                <picture>
+                  <source srcset="img/dentist/Competitor2_pro@1x.jpg" media="(max-width:767px)">
+                  <img src="img/dentist/Competitor2_pro@2x.jpg" alt="Competitor 2 - Pros">
+                </picture>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="img/dentist/Competitor2_con@2x.jpg" data-lightbox="Competitive Analysis">
+                <picture>
+                  <source srcset="img/dentist/Competitor2_con@1x.jpg" media="(max-width:767px)">
+                  <img src="img/dentist/Competitor2_con@2x.jpg" alt="Competitor 2 - Cons">
+                </picture>
+              </a>
             </div>
           </div>
-          <div class="subsection-16">
+          <div>
             <h4 class="dentist-process">2. User Reseach</h4>
+            <picture>
+              <source srcset="img/dentist/DesignProcess_2@1x.jpg" media="(max-width:767px)">
+              <img src="img/dentist/DesignProcess_2@2x.jpg" alt="Design Process 2">
+            </picture>
             <p>In order to identify problems that users are facing, I tried to reach out some people to ask their experience in making an appointment with a dentist.</p>
-            <div class="dentist-border">
+            <div class="width-80 dentist-border">
               <b>List of Questions</b>
               <ol>
                 <li>How do you make an appointment with your dentist?</li>
@@ -166,127 +174,145 @@
               </picture>
             </div>
           </div>
-          <div class="subsection-16">
-            <h4 class="dentist-process">3. User Flow</h4>
-            <p>With the user stories and the problem statement in mind, I started working on making a user flow.</p>
-            <p>After an object, an entry point of task flow, and success criteria were defined, I made a list of each task that users would need to go through in order to achieve the object.</p>
-            <p>Based on the task list, the user flow was established.</p>
-            <div class="subsection-row-40">
-              <div class="col-md-4">
-                <a href="img/dentist/TaskFlow@2x.jpg" data-lightbox="User Flow">
-                  <picture>
-                    <source srcset="img/dentist/TaskFlow@1x.jpg" media="(max-width:767px)">
-                    <img src="img/dentist/TaskFlow@2x.jpg" alt="Task Flow">
-                  </picture>
-                </a>
-              </div>
-              <div class="col-md-8">
-                <a href="img/dentist/UserFlow@2x.jpg" data-lightbox="User Flow">
-                  <picture>
-                    <source srcset="img/dentist/UserFlow@1x.jpg" media="(max-width:767px)">
-                    <img src="img/dentist/UserFlow@2x.jpg" alt="User Flow">
-                  </picture>
-                </a>
-              </div>
+        </div>
+        <div>
+          <h4 class="dentist-process">3. User Flow</h4>
+          <picture>
+            <source srcset="img/dentist/DesignProcess_3@1x.jpg" media="(max-width:767px)">
+            <img src="img/dentist/DesignProcess_3@2x.jpg" alt="Design Process 3">
+          </picture>
+          <p>With the user stories and the problem statement in mind, I started working on making a user flow.</p>
+          <p>After an object, an entry point of task flow, and success criteria were defined, I made a list of each task that users would need to go through in order to achieve the object.</p>
+          <p>Based on the task list, the user flow was established.</p>
+          <div class="row">
+            <div class="col-md-4">
+              <a href="img/dentist/TaskFlow@2x.jpg" data-lightbox="User Flow">
+                <picture>
+                  <source srcset="img/dentist/TaskFlow@1x.jpg" media="(max-width:767px)">
+                  <img src="img/dentist/TaskFlow@2x.jpg" alt="Task Flow">
+                </picture>
+              </a>
             </div>
-          </div>
-          <div class="subsection-16">
-            <h4 class="dentist-process">4. Wireframes</h4>
-            <p>With the user flow as a reference, wireframing process was initiated from low-fidelity wireframes with a pen and paper, followed by mid-fidelity wireframes with Balsamiq and high-fidelity wireframes with Sketch.</p>
-            <p>In addition to the objective of booking an appointment, I tried to incorporate additional functions/characteristics to meet the users’ needs.</p>
-            <div class="dentist-border">
-              <b>Additional Functions and Characteristics</b>
-              <ul>
-                <li>Immediate confirmation of appointment</li>
-                <li>Comment field for patients to communicate their problems</li>
-                <li>Function to check how many people are waiting before you, in case there are delays in the dentist’s schedule</li>
-              </ul>
-            </div>
-            <div class="subsection-row-40">
-              <div class="col-md-6">
-                <a href="img/dentist/Mid-fidelityWireframes@2x.jpg" data-lightbox="Wireframes">
-                  <picture>
-                    <source srcset="img/dentist/Mid-fidelityWireframes@1x.jpg" media="(max-width:767px)">
-                    <img src="img/dentist/Mid-fidelityWireframes@2x.jpg" alt="Mid-fidelity Wireframes">
-                  </picture>
-                </a>
-                <h5>Mid-fidelity wireframes</h5>
-              </div>
-              <div class="col-md-6">
-                <a href="img/dentist/High-fidelityWireframes@2x.jpg" data-lightbox="Wireframes">
-                  <picture>
-                    <source srcset="img/dentist/High-fidelityWireframes@1x.jpg" media="(max-width:767px)">
-                    <img src="img/dentist/High-fidelityWireframes@2x.jpg" alt="High-fidelity Wireframes">
-                  </picture>
-                </a>
-                <h5>High-fidelity wireframes</h5>
-              </div>
-            </div>
-          </div>
-          <div class="subsection-16">
-            <h4 class="dentist-process">5. Usability Tests</h4>
-            <p>With the first version of high-fidelity wireframes, I conducted usability tests with two participants.</p>
-            <p>Situation and tasks given to them and the results of the tests are summarised in below.</p>
-            <div class="subsection-row-40">
-              <div class="col-md-6">
-                <a href="img/dentist/Scenarios@2x.jpg" data-lightbox="Usability Tests">
-                  <picture>
-                    <source srcset="img/dentist/Scenarios@1x.jpg" media="(max-width:767px)">
-                    <img src="img/dentist/Scenarios@2x.jpg" alt="Scenarios">
-                  </picture>
-                </a>
-              </div>
-              <div class="col-md-6">
-                <a href="img/dentist/UsabilityTestResults@2x.jpg" data-lightbox="Usability Tests">
-                  <picture>
-                    <source srcset="img/dentist/UsabilityTestResults@1x.jpg" media="(max-width:767px)">
-                    <img src="img/dentist/UsabilityTestResults@2x.jpg" alt="Usability Test Results">
-                  </picture>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="subsection-16">
-            <h4 class="dentist-process">6. Iteration and Future Process</h4>
-            <div class="width-80">
-              <picture>
-                <source srcset="img/dentist/Iteration@1x.jpg" media="(max-width:767px)">
-                <img src="img/dentist/Iteration@2x.jpg" alt="Iteration">
-              </picture>
+            <div class="col-md-8">
+              <a href="img/dentist/UserFlow@2x.jpg" data-lightbox="User Flow">
+                <picture>
+                  <source srcset="img/dentist/UserFlow@1x.jpg" media="(max-width:767px)">
+                  <img src="img/dentist/UserFlow@2x.jpg" alt="User Flow">
+                </picture>
+              </a>
             </div>
           </div>
         </div>
+        <div>
+          <h4 class="dentist-process">4. Wireframes</h4>
+          <picture>
+            <source srcset="img/dentist/DesignProcess_4@1x.jpg" media="(max-width:767px)">
+            <img src="img/dentist/DesignProcess_4@2x.jpg" alt="Design Process 4">
+          </picture>
+          <p>With the user flow as a reference, wireframing process was initiated from low-fidelity wireframes with a pen and paper, followed by mid-fidelity wireframes with Balsamiq and high-fidelity wireframes with Sketch.</p>
+          <p>In addition to the objective of booking an appointment, I tried to incorporate additional functions/characteristics to meet the users’ needs.</p>
+          <div class="width-80 dentist-border">
+            <b>Additional Functions and Characteristics</b>
+            <ul>
+              <li>Immediate confirmation of appointment</li>
+              <li>Comment field for patients to communicate their problems</li>
+              <li>Function to check how many people are waiting before you, in case there are delays in the dentist’s schedule</li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="img/dentist/Mid-fidelityWireframes@2x.jpg" data-lightbox="Wireframes">
+                <picture>
+                  <source srcset="img/dentist/Mid-fidelityWireframes@1x.jpg" media="(max-width:767px)">
+                  <img src="img/dentist/Mid-fidelityWireframes@2x.jpg" alt="Mid-fidelity Wireframes">
+                </picture>
+              </a>
+              <h5>Mid-fidelity wireframes</h5>
+            </div>
+            <div class="col-md-6">
+              <a href="img/dentist/High-fidelityWireframes@2x.jpg" data-lightbox="Wireframes">
+                <picture>
+                  <source srcset="img/dentist/High-fidelityWireframes@1x.jpg" media="(max-width:767px)">
+                  <img src="img/dentist/High-fidelityWireframes@2x.jpg" alt="High-fidelity Wireframes">
+                </picture>
+              </a>
+              <h5>High-fidelity wireframes</h5>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4 class="dentist-process">5. Usability Tests</h4>
+          <picture>
+            <source srcset="img/dentist/DesignProcess_5@1x.jpg" media="(max-width:767px)">
+            <img src="img/dentist/DesignProcess_5@2x.jpg" alt="Design Process 5">
+          </picture>
+          <p>With the first version of high-fidelity wireframes, I conducted usability tests with two participants.</p>
+          <p>Situation and tasks given to them and the results of the tests are summarised in below.</p>
+          <div class="row">
+            <div class="col-md-6">
+              <a href="img/dentist/Scenarios@2x.jpg" data-lightbox="Usability Tests">
+                <picture>
+                  <source srcset="img/dentist/Scenarios@1x.jpg" media="(max-width:767px)">
+                  <img src="img/dentist/Scenarios@2x.jpg" alt="Scenarios">
+                </picture>
+              </a>
+            </div>
+            <div class="col-md-6">
+              <a href="img/dentist/UsabilityTestResults@2x.jpg" data-lightbox="Usability Tests">
+                <picture>
+                  <source srcset="img/dentist/UsabilityTestResults@1x.jpg" media="(max-width:767px)">
+                  <img src="img/dentist/UsabilityTestResults@2x.jpg" alt="Usability Test Results">
+                </picture>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4 class="dentist-process">6. Iteration and Future Process</h4>
+          <picture>
+            <source srcset="img/dentist/DesignProcess_6@1x.jpg" media="(max-width:767px)">
+            <img src="img/dentist/DesignProcess_6@2x.jpg" alt="Design Process 6">
+          </picture>
+          <div class="width-80">
+            <picture>
+              <source srcset="img/dentist/Iteration@1x.jpg" media="(max-width:767px)">
+              <img src="img/dentist/Iteration@2x.jpg" alt="Iteration">
+            </picture>
+          </div>
+        </div>
       </div>
-      <div style="display: flex;">
-        <a href="#top" class="button secondary">Back to top</a>
+      <div class="row" style="display: flex;">
+        <a href="#top" class="button">Back to top</a>
       </div>
     </div>
   </main>
 
   <footer id="contact">
     <div class="container">
-      <h3>WANT TO GET IN TOUCH? <span>DROP ME A LINE!</span></h3>
-      <p style="margin: 16px 0">I’m open for opportunities in the Netherlands or remote projects.
+      <h2>Want to get in touch? <span>Drop me a line!</span></h2>
+      <p>I’m currently looking for an opportunity to work in the Netherlands or remotely.
         <br>
         Feel free to contact me!</p>
-      <div class="social-media">
-        <a href="mailto:saoriokawa@gmail.com">
-          <i class="material-icons" style="margin: 8px;">email</i>
-        </a>
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/saoriokawa/" target="_blank">
-          <i class='fab fa-linkedin' style='margin: 8px; font-size:24px'></i>
-        </a>
-        <!-- Behance -->
-        <a href="https://www.behance.net/saoriokawa" target="_blank">
-          <i class='fab fa-behance-square' style='margin: 8px; font-size:24px'></i>
-        </a>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="social-media new-section">
+            <p><i class="fas fa-envelope fa-lg"></i> &nbsp;&nbsp;<a href="mailto:saoriokawa@gmail.com">saoriokawa@gmail.com</a></p>
+            <p><i class="fas fa-phone-alt fa-lg"></i> &nbsp;&nbsp;<a href="tel:+31642947663">+31 6 4294 7663</a></p>
+            <!-- LinkedIn -->
+            <p><i class="fab fa-linkedin fa-lg"></i> &nbsp;&nbsp;<a href="https://www.linkedin.com/in/saoriokawa/" target="_blank">LinkedIn</a></p>
+            <!-- Behance -->
+            <p><i class="fab fa-behance-square fa-lg"></i> &nbsp;&nbsp;<a href="https://www.behance.net/saoriokawa" target="_blank">Behance</a></p>
+
+          </div>
+        </div>
+        <div class="col-md-8">
+          <!-- www.123formbuilder.com script begins here -->
+          <script type="text/javascript" defer src="https://www.123formbuilder.com/embed/4904646.js" data-role="form" data-default-width="650px"></script><!-- www.123formbuilder.com script ends here -->
+        </div>
       </div>
-    </div>
-    <h5>© Saori Okawa. All rights reserved.</h5>
+      <h5>© Saori Okawa. All rights reserved.</h5>
     </div>
   </footer>
-
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
   <script src="js/lightbox.js"></script>
