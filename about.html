@@ -21,7 +21,11 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel=" stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/ffb691a1dc.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -29,13 +33,13 @@
   <header>
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html" class="current-page"><img src="img/Logo@1x.png" alt="Saori Okawa" class="logo"></a>
+        <a href="index.html" class="current-page"><img src="img/logo_light.png" alt="Saori Okawa" class="logo"></a>
         <nav>
           <ul>
             <li><a href="index.html" class="non-current-page">PORTFOLIO</a></li>
             <li><a href="about.html" class="current-page">ABOUT</a></li>
             <li><a href="#contact" class="non-current-page" onclick="menuToggle()">CONTACT</a></li>
-            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="material-icons">menu</i></a></li>
           </ul>
         </nav>
       </div>
@@ -43,102 +47,109 @@
   </header>
 
   <main>
-    <div>
-      <picture>
-        <source srcset="img/others/TopImage_Aboutme.jpg" media="(max-width:767px)">
-        <img src="img/others/TopImage_Aboutme.jpg" alt="About Me">
-      </picture>
-    </div>
-    <div class="container">
-      <div class="cv">
-        <img src="img/others/CVimage@2x.jpg" alt="Saori Okawa">
-        <a href="files/CV_SaoriOkawa.pdf" target="_blank" class="button contact">Check my CV</a>
+    <div class="container main-contents" id="about-me">
+      <div class="subsection-row-40">
+        <div class="subsection-24 col-md-7 col-lg-7" style="align-self: center">
+          <h1>About Me</h1>
+          <h2>Read my story below, or check my CV for a short summary.</h2>
+          <div style="display: flex;">
+            <a href="files/CV_SaoriOkawa.pdf" target="_blank" class="button large">View my CV
+              <i class="material-icons" style="font-size:32px; color:3d3d3d;">arrow_right_alt</i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-5 col-lg-5" style="align-self: center">
+          <picture>
+            <img src="img/others/ProfilePicture@1x.jpg" alt="Saori Okawa">
+          </picture>
+        </div>
       </div>
-      <div class="row center">
+      <div class="subsection-row-40">
+        <div class="subsection-40 col-md-7 col-lg-7">
+          <!-- open My Story -->
+          <div class="subsection-24">
+            <h3>MY STORY</h3>
+            <p>Before I stepped into the world of UX, I was always into learning new languages which allowed me to communicate with various people and be open-minded. Eventually, I decided to become a language teacher, like many other language-lovers do. </p>
+            <p>As a teacher, first I listened to and observed students to figure out what they struggle to understand, then organised the relevant information in a simple way to help them comprehend it more easily. Without realising that this skill could be useful as a UX Designer, I was following my linguistic interests for many years. I was not unhappy, but I had a feeling that something was missing. </p>
+            <p>It was when I was making a website for my self-employment work that I finally met the field of UX. The more I studied, the more I was absorbed in this field. I was fascinated with the fact that a small change of design could improve so many people’s lives. </p>
+            <p>Since 2019, I have been working as a UX Designer. Now I am looking to give positive impacts on the various users’ lives through design.</p>
+            <div style="display: flex;">
+              <a href="files/CV_SaoriOkawa.pdf" target="_blank" class="button">Check my CV</a>
+            </div>
+          </div>
+          <!-- end My Story -->
+          <!-- open My Goal -->
+          <div>
+            <h2>My goal is to understand the users, identify <span style="color: #d05f00">the real problem</span> that they have, and provide solutions to the problem.</h2>
+          </div>
+          <!-- end My Goal -->
+        </div>
         <!-- open Skills -->
-        <div class="col-md-6 skills">
-          <h3>Relevant Skills</h3>
-          <ul>
-            <li>Competitive Analysis</li>
-            <li>User Interviews</li>
-            <li>User Personas</li>
-            <li>Journey Maps</li>
-            <li>Information Architecture</li>
-            <li>Wireframing and Prototyping</li>
-            <li>Usability Testing</li>
-            <li>HTML & CSS</li>
-          </ul>
+        <div class="subsection-40 col-md-5 col-lg-5">
+          <div class="skills-tools" id="skills">
+            <h4>Relevant Skills</h4>
+            <ul>
+              <li>Competitive Analysis</li>
+              <li>User Interviews</li>
+              <li>User Surveys</li>
+              <li>Personas</li>
+              <li>User Flows</li>
+              <li>Journey Maps</li>
+              <li>Information Architecture</li>
+              <li>Card Sorting</li>
+              <li>Wireframing</li>
+              <li>Prototyping</li>
+              <li>Usability Testing</li>
+              <li>HTML/CSS (basic)</li>
+            </ul>
+          </div>
+          <div class="skills-tools">
+            <h4>Tools I use</h4>
+            <ul>
+              <li>Figma</li>
+              <li>Sketch</li>
+              <li>Adobe XD</li>
+              <li>InVision</li>
+              <li>Balsamiq</li>
+              <li>FlowMapp</li>
+              <li>Trymata</li>
+              <li>Usability Hub</li>
+              <li>Optimal Workshop</li>
+            </ul>
+          </div>
         </div>
-        <div class="col-md-6 skills">
-          <h3>Tools I use</h3>
-          <ul>
-            <li>Sketch</li>
-            <li>InVision</li>
-            <li>Adobe XD</li>
-            <li>Balsamiq</li>
-            <li>Usability Hub</li>
-            <li>Optimal Workshop</li>
-            <li>FlowMapp</li>
-            <li>MS Office</li>
-          </ul>
-        </div>
-      </div><!-- end Skills -->
-    </div>
-    <div id="hero-about">
-      <div id="about-me">
-        <h2>Here is a brief summary of myself..</h2>
+        <!-- end Skills -->
+      </div>
+      <div style="display: flex;">
+        <a href="#top" class="button secondary">Back to top</a>
       </div>
     </div>
-    <div class="container">
-      <picture id="profile-picture">
-        <img src="img/others/ProfilePicture@1x.jpg" alt="Saori Okawa">
-      </picture>
-      <div id="mystory" class="center">
-        <!-- open My Story -->
-        <h3>My Story</h3>
-        <b class="mystory-section">BACKGROUND</b>
-        <p>I have been involved in linguistic industries such as language education and translation.</p>
-        <p>As a teacher, first I listened to and observed students to figure out what they struggle to understand, then organised the relevant information in a simple way to help them comprehend it more easily. This experience has developed the
-          exact skills which I need as a UX designer.</p>
-        <p>In addition, I can offer a high sensitivity for details and rigidity in getting a job done, which I have acquired through my four years of experience as a translation checker.</p>
-        <b class="mystory-section">CURIOSITY</b>
-        <p>“Curiosity” is the word that summarises me the most.</p>
-        <p>You would be probably convinced once you hear I lived in 5 different countries in my 20’s!</p>
-        <p>I am eager to learn new things by doing research, by taking action and by communicating with people.</p>
-        <b class="mystory-section">GOALS</b>
-        <p>My goal is to apply these skills for helping not only the students in front of me, but also a wide range of people enjoying using products or services.</p>
-        <p>My source of motivation is to do something for people and to fulfill my curiosity. I am looking to understand different users and provide them solutions.</p>
-      </div><!-- end My Story -->
-    </div>
-    <div class="row" style="display: flex;"><a href="#top" class="button center">Back to top</a></div>
   </main>
 
   <footer id="contact">
     <div class="container">
-      <h2>Want to get in touch? <span>Drop me a line!</span></h2>
-      <p>I’m currently looking for an opportunity to work in the Netherlands or remotely.
+      <h3>WANT TO GET IN TOUCH? <span>DROP ME A LINE!</span></h3>
+      <p style="margin: 16px 0">I’m open for opportunities in the Netherlands or remote projects.
         <br>
         Feel free to contact me!</p>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="social-media new-section">
-            <p><i class="fas fa-envelope fa-lg"></i> &nbsp;&nbsp;<a href="mailto:saoriokawa@gmail.com">saoriokawa@gmail.com</a></p>
-            <p><i class="fas fa-phone-alt fa-lg"></i> &nbsp;&nbsp;<a href="tel:+31642947663">+31 6 4294 7663</a></p>
-            <!-- LinkedIn -->
-            <p><i class="fab fa-linkedin fa-lg"></i> &nbsp;&nbsp;<a href="https://www.linkedin.com/in/saoriokawa/" target="_blank">LinkedIn</a></p>
-            <!-- Behance -->
-            <p><i class="fab fa-behance-square fa-lg"></i> &nbsp;&nbsp;<a href="https://www.behance.net/saoriokawa" target="_blank">Behance</a></p>
-
-          </div>
-        </div>
-        <div class="col-md-8">
-          <!-- www.123formbuilder.com script begins here -->
-          <script type="text/javascript" defer src="https://www.123formbuilder.com/embed/4904646.js" data-role="form" data-default-width="650px"></script><!-- www.123formbuilder.com script ends here -->
-        </div>
+      <div class="social-media">
+        <a href="mailto:saoriokawa@gmail.com">
+          <i class="material-icons" style="margin: 8px;">email</i>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/saoriokawa/" target="_blank">
+          <i class='fab fa-linkedin' style='margin: 8px; font-size:24px'></i>
+        </a>
+        <!-- Behance -->
+        <a href="https://www.behance.net/saoriokawa" target="_blank">
+          <i class='fab fa-behance-square' style='margin: 8px; font-size:24px'></i>
+        </a>
       </div>
-      <h5>© Saori Okawa. All rights reserved.</h5>
+    </div>
+    <h5>© Saori Okawa. All rights reserved.</h5>
     </div>
   </footer>
+  
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
