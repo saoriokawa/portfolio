@@ -21,7 +21,12 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/ffb691a1dc.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ffb691a1dc.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -29,13 +34,13 @@
   <header>
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html" class="current-page"><img src="img/Logo@1x.png" alt="Saori Okawa" class="logo"></a>
+        <a href="index.html" class="current-page"><img src="img/logo_light.png" alt="Saori Okawa" class="logo"></a>
         <nav>
           <ul>
             <li><a href="index.html" class="current-page">PORTFOLIO</a></li>
             <li><a href="about.html" class="non-current-page">ABOUT</a></li>
             <li><a href="#contact" class="non-current-page" onclick="menuToggle()">CONTACT</a></li>
-            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="material-icons">menu</i></a></li>
           </ul>
         </nav>
       </div>
@@ -43,30 +48,28 @@
   </header>
 
   <main id="top">
+    <!-- open Hero Section -->
     <div id="hero">
-      <!-- open Hero Section -->
-      <picture>
-        <source srcset="img/others/TopImage.jpg" media="(max-width:767px)">
-        <img src="img/others/TopImage.jpg" alt="Top Image">
-      </picture>
-      <div class="container center">
-        <h1>
-          Hi there!
-          <span>
-            I'm Saori Okawa.
-          </span>
-        </h1>
-        <p> I’m a UX designer based in the Hague, the Netherlands, with a curiosity in understanding people as well as organisational skills to make complicated information easy to comprehend.</p>
+      <div class="container">
+        <img id="hero-image" src="img/others/HeroImage@2x.jpg" alt="Top Image" style="width:100%">
+        <div class="subsection-24">
+          <h1>Hi, I'm Saori</h1>
+          <h2>I am a UX Designer based in The Hague, The Netherlands.</h2>
+          <div style="display: flex;">
+            <a href="#portfolio" class="button large">Check out my work
+              <i class="material-icons" style="font-size:32px; color:3d3d3d;">arrow_right_alt</i>
+            </a>
+          </div>
+        </div>
       </div>
-    </div> <!-- end Hero Section -->
-
+    </div>
+    <!-- end Hero Section -->
+    <!-- open Portfolio Section -->
     <div id="portfolio">
-      <!-- open Portfolio Section -->
-      <div class="container new-section">
-        <h2>PORTFOLIO</h2>
-        <div class="row">
-          <!-- open Ink Tank Section -->
-          <div class="new-section col-md-6 col-lg-7">
+      <div class="container main-contents">
+        <!-- open Ink Tank Section -->
+        <div class="subsection-row-40">
+          <div class="col-md-6 col-lg-7">
             <a href="inktank.html">
               <picture>
                 <source srcset="img/inktank/Mockups@1x.jpg" media="(max-width:767px)">
@@ -74,18 +77,17 @@
               </picture>
             </a>
           </div>
-          <div class="center col-md-6 col-lg-5">
+          <div class="col-md-6 col-lg-5">
             <h3>INK TANK</h3>
-            <b>UX DESIGN</b>
-            <br>
-            <i>Conceptual Project</i>
-            <p>Ink Tank is an app to help people finding their ideal tattoo design</p>
-            <a href="inktank.html" class="button contact">View Project</a>
+            <p style="color: #989898">UX Design / Research</p>
+            <p style="margin: 8px 0 16px">A conceptual project to help people finding their ideal tattoo design, and to connect tattoo artists with potential customers.</p>
+            <a href="inktank.html" class="button">View Project</a>
           </div>
-        </div><!-- end Ink Tank Section -->
-        <div class="row">
-          <!-- open Flippy Section -->
-          <div class="new-section col-md-6 col-lg-7">
+        </div>
+        <!-- end Ink Tank Section -->
+        <!-- open Flippy Section -->
+        <div class="subsection-row-40">
+          <div class="col-md-6 col-lg-7">
             <a href="flippy.html">
               <picture>
                 <source srcset="img/flippy/Mockups@1x.jpg" media="(max-width:767px)">
@@ -93,17 +95,17 @@
               </picture>
             </a>
           </div>
-          <div class="center col-md-6 col-lg-5">
+          <div class="col-md-6 col-lg-5">
             <h3>FLIPPY</h3>
-            <b>UX DESIGN</b>
-            <br>
-            <i>Conceptual Project</i>
-            <p>Flippy is a flashcard app to help learning vocabulary of new languages.</p>
-            <a href="flippy.html" class="button contact">View Project</a>
+            <p style="color: #989898">UX Design / Research</p>
+            <p style="margin: 8px 0 16px">A conceptual project to help people learning vocabulary of new languages.</p>
+            <a href="flippy.html" class="button">View Project</a>
           </div>
-        </div><!-- end Flippy Section -->
-        <div class="row"><!-- open Dentist Section -->
-          <div class="new-section col-md-6 col-lg-7">
+        </div>
+        <!-- end Flippy Section -->
+        <!-- open Dentist Section -->
+        <div class="subsection-row-40">
+          <div class="col-md-6 col-lg-7">
             <a href="dentist.html">
               <picture>
                 <source srcset="img/dentist/Mockups@1x.jpg" media="(max-width:767px)">
@@ -111,20 +113,18 @@
               </picture>
             </a>
           </div>
-          <div class="center col-md-6 col-lg-5">
+          <div class="col-md-6 col-lg-5">
             <h3>ONLINE BOOKING PLATFORM</h3>
-            <b>UX DESIGN</b>
-            <br>
-            <i>Design Assignment</i>
-            <p>3-day project to create an interface that allows users to book an appointment online with the dentist.</p>
-            <a href="dentist.html" class="button contact">View Project</a>
+            <p style="color: #989898">UX Design / Research</p>
+            <p style="margin: 8px 0 16px">A 3-day design assignment to create an interface that allows users to book an appointment online with the dentist.</p>
+            <a href="dentist.html" class="button">View Project</a>
           </div>
-        </div><!-- end Dentist Section -->
-
-        <div class="row">
-          <!-- open CSS ANIMATION Section -->
-          <div class="new-section col-md-6 col-lg-7">
-            <svg viewBox="0 0 1046 525" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        </div>
+        <!-- end Dentist Section -->
+        <!-- open CSS ANIMATION Section -->
+        <div class="subsection-row-40">
+          <div class="col-md-6 col-lg-7">
+            <svg width="100%" viewBox="0 0 1046 525" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
               <title>Artboard</title>
               <desc>Created with Sketch.</desc>
@@ -256,44 +256,44 @@
               </g>
             </svg>
           </div>
-          <div class="center col-md-6 col-lg-5">
-            <h3>CSS Animation</h3>
-            <p>This is my hometown, Kobe, Japan!</p>
-            <p>Look at the image for a while..</p>
-            <p>Do you see any change? ;)</p>
+          <div class="col-md-6 col-lg-5">
+            <h3>JUST FOR FUN!</h3>
+            <p style="color: #989898">CSS Animation</p>
+            <p style="margin: 8px 0 16px">This is my hometown, Kobe, Japan! Look at the image for a while... Do you see any change? ;)</p>
           </div>
-        </div><!-- end CSS ANIMATION Section -->
-
-        <div class="row" style="display: flex;"><a href="#top" class="button center">Back to top</a>
+          <!-- end CSS ANIMATION Section -->
+        </div>
+        <!-- end Portfolio Section -->
+        <div style="display: flex;">
+          <a href="#top" class="button secondary">Back to top</a>
         </div>
       </div>
-    </div> <!-- end Portfolio Section -->
+    </div>
+
+
   </main>
 
   <footer id="contact">
     <div class="container">
-      <h2>Want to get in touch? <span>Drop me a line!</span></h2>
-      <p>I’m currently looking for an opportunity to work in the Netherlands or remotely.
+      <h3>WANT TO GET IN TOUCH? <span>DROP ME A LINE!</span></h3>
+      <p style="margin: 16px 0">I’m open for opportunities in the Netherlands or remote projects.
         <br>
         Feel free to contact me!</p>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="social-media new-section">
-            <p><i class="fas fa-envelope fa-lg"></i> &nbsp;&nbsp;<a href="mailto:saoriokawa@gmail.com">saoriokawa@gmail.com</a></p>
-            <p><i class="fas fa-phone-alt fa-lg"></i> &nbsp;&nbsp;<a href="tel:+31642947663">+31 6 4294 7663</a></p>
-            <!-- LinkedIn -->
-            <p><i class="fab fa-linkedin fa-lg"></i> &nbsp;&nbsp;<a href="https://www.linkedin.com/in/saoriokawa/" target="_blank">LinkedIn</a></p>
-            <!-- Behance -->
-            <p><i class="fab fa-behance-square fa-lg"></i> &nbsp;&nbsp;<a href="https://www.behance.net/saoriokawa" target="_blank">Behance</a></p>
-
-          </div>
-        </div>
-        <div class="col-md-8">
-          <!-- www.123formbuilder.com script begins here -->
-          <script type="text/javascript" defer src="https://www.123formbuilder.com/embed/4904646.js" data-role="form" data-default-width="650px"></script><!-- www.123formbuilder.com script ends here -->
-        </div>
+      <div class="social-media">
+        <a href="mailto:saoriokawa@gmail.com">
+          <i class="material-icons" style="margin: 8px;">email</i>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/saoriokawa/" target="_blank">
+          <i class='fab fa-linkedin' style='margin: 8px; font-size:24px'></i>
+        </a>
+        <!-- Behance -->
+        <a href="https://www.behance.net/saoriokawa" target="_blank">
+          <i class='fab fa-behance-square' style='margin: 8px; font-size:24px'></i>
+        </a>
       </div>
-      <h5>© Saori Okawa. All rights reserved.</h5>
+    </div>
+    <h5>© Saori Okawa. All rights reserved.</h5>
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
