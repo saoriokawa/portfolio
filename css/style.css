@@ -647,7 +647,7 @@ Large devices (1024px or larger)
     border-radius: 8px;
   }
 
-  #portfolio .main-contents {
+  .main-contents {
     padding: 40px 0;
   }
 }
