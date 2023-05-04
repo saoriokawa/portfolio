@@ -40,7 +40,7 @@ footer {
 p {
   margin: 0;
   line-height: 1.6;
-  color: #5c5c5c;
+  color: #3d3d3d;
 }
 
 li {
@@ -55,6 +55,7 @@ h1 {
   line-height: 1.125;
   letter-spacing: 0.08em;
   margin: 0;
+  color: #3d3d3d;
 }
 
 h2 {
@@ -63,6 +64,7 @@ h2 {
   line-height: 1.75;
   letter-spacing: 0.05em;
   margin: 0;
+  color: #3d3d3d;
 }
 
 h3 {
@@ -92,6 +94,7 @@ h5 {
 
 img {
   width: 100%;
+  border-radius: 8px;
 }
 
 /* ========== Link ========== */
@@ -160,12 +163,6 @@ a:active {
   text-decoration: none;
 }
 
-.button.secondary.disabled {
-  color: #989898;
-  background-color: #eaeaea;
-  text-decoration: none;
-}
-
 .button.outlined {
   color: #3d3d3d;
   border: 1px solid #989898;
@@ -182,29 +179,6 @@ a:active {
   color: #1d1d1d;
   background-color: #f3f3f3;
   text-decoration: none;
-}
-
-.button.underlined {
-  color: #3d3d3d;
-  background-color: transparent;
-  padding: 12px 8px;
-  border: solid #3d3d3d;
-  border-width: 0 0 1px;
-  border-radius: 0;
-  text-transform: none;
-  transition: all 0.4s;
-}
-
-.button.underlined:hover {
-  color: #5f5f5f;
-  padding: 12px 16px;
-  opacity: 1;
-  transition: all 0.4s;
-  text-decoration: none;
-}
-
-.button.underlined:active {
-  color: #eaeaea;
 }
 
 .button.large {
@@ -306,12 +280,6 @@ a:active {
   gap: 8px;
 }
 
-.subsection-row-8 {
-  display: flex;
-  flex-direction: row;
-  gap: 8px;
-}
-
 /* ========== Hero section ========== */
 #hero {
   display: inline-block;
@@ -325,7 +293,7 @@ a:active {
 #hero .subsection-24 {
   position: absolute;
   top: 50%;
-  color: #fff;
+  color: white;
   padding-left: 40px;
   max-width: 520px;
   transform: translate(0, -50%);
@@ -341,6 +309,32 @@ a:active {
 }
 
 /* ========== ABOUT page ========== */
+.skills-tools > ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills-tools > ul > li {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 12px;
+  flex: none;
+  background: #f3f3f3;
+  border-radius: 20px;
+  order: 0;
+  flex-grow: 0;
+  font-size: 14px;
+}
+
+#skills {
+  padding-top: 24px;
+}
 
 /* ========== Header / Navigation menu ========== */
 .logo {
@@ -444,6 +438,16 @@ nav > ul > li > a:active {
   border-bottom: 4px solid #ffd7be;
 }
 
+.portfolio-section p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.portfolio-section li {
+  font-size: 14px;
+  line-height: 20px;
+}
+
 .outlined-section {
   display: flex;
   flex-direction: row;
@@ -461,37 +465,108 @@ nav > ul > li > a:active {
 
 .outlined-section li {
   color: #6f6f6f;
-  font-size: 14px;
 }
 
-#research_summary {
-  font-size: 14px;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 40px;
-  border: 1px solid #dbdbdb;
+/* ========== Animation ========== */
+@keyframes color-change-sky {
+  from {
+    fill: #ceedfb;
+  }
+
+  to {
+    fill: #372cc3;
+  }
+}
+
+#Sky {
+  animation: 15s color-change-sky infinite alternate linear;
+}
+
+@keyframes color-change-seagull {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.Seagull {
+  animation: 15s color-change-seagull infinite alternate linear;
+}
+
+@keyframes color-change-night {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.Star {
+  animation: 15s color-change-night infinite alternate linear;
+}
+
+.Moon {
+  animation: 15s color-change-night infinite alternate linear;
+}
+
+/* ========== INK TANK page ========== */
+.inktank-process {
+  color: #00796b;
+  font-weight: 600;
+}
+
+.image-link img:hover {
+  transition: 0.2s;
+  opacity: 0.8;
+}
+
+/* ========== FLIPPY page ========== */
+.flippy-process {
+  color: #f57c00;
+  font-weight: 600;
+}
+
+#flippy-persona {
+  display: inline-block;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+/* ========== DENTIST page ========== */
+.dentist-process {
+  color: #01579b;
+  font-weight: 600;
+}
+
+.dentist-border {
+  padding: 24px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #01579b;
   border-radius: 8px;
+  margin: 16px 0;
 }
 
-#research_summary li {
-  color: #5c5c5c;
+.dentist-border > ol {
+  margin-block-end: 0;
 }
 
-#summary_section p {
-  color: #3d3d3d;
-  font-size: 16px;
-  font-weight: 800;
-  box-sizing: border-box;
-  display: flex;
-  align-items: flex-start;
-  padding: 0 0 8px;
-  border-bottom: 2px solid #ffd7be;
+.dentist-border > ul {
+  margin-block-end: 0;
 }
 
-#one-image {
-  margin: 0 120px;
+.dentist-interview-results {
+  border-left: 8px solid #01579b;
+  padding: 8px 0 8px 16px;
+}
+
+.dentist-interview-results > b {
+  color: #01579b;
 }
 
 /* ==============================
@@ -525,18 +600,7 @@ Small devices (Smaller than 640px)
 
   .subsection-row-40 {
     flex-direction: column;
-    gap: 40px;
-    width: 100%;
-  }
-
-  #one-image {
-    margin: 0 16px;
-  }
-
-  #two-columns {
-    flex-direction: column;
-    gap: 0;
-    align-items: center;
+    gap: 16px;
   }
 
   .navtoggle.responsive nav {
@@ -643,10 +707,6 @@ Medium devices (640px and larger)
   .width-80 {
     width: 80%;
     margin: 0 auto;
-  }
-
-  #one-image {
-    margin: 0 40px;
   }
 }
 
