@@ -490,6 +490,21 @@ nav > ul > li > a:active {
   border-bottom: 2px solid #ffd7be;
 }
 
+#grey_section {
+  padding: 24px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+#grey_section p {
+  text-align: center;
+}
+
+#grey_section .subsection-8 {
+  flex-grow: 1;
+  align-items: center;
+}
+
 #one-image {
   margin: 0 120px;
 }
